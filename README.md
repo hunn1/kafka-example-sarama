@@ -14,3 +14,17 @@ bin/kafka-server-start.sh config/server.properties
 find ./libs/ -name \*kafka_\* | head -1 | grep -o '\kafka[^\n]*'
 
 ```
+
+
+
+
+```
+
+消费者
+go run consumer.go 192.168.241.232:9092 1 test
+
+
+
+生产者
+go run main.go 192.168.241.232:9092 test
+```
